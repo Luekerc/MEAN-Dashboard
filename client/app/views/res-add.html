@@ -1,0 +1,15 @@
+<form role="form">
+	<div class="form-group">
+		<label for="title" class="control-label">Name</label>
+		<input type="text" ng-model="residents.name" class="form-control" id="title" placeholder="Enter your name">
+	</div>
+	<div class="form-group">
+		<label for="title" class="control-label">Date</label>
+		<input type="text" ng-model="residents.date" class="form-control" id="title" placeholder="mm/dd/yy">
+	</div>
+	<div class="form-group">
+		<label for="title" class="control-label">Hours</label>
+		<input type="text" ng-model="residents.hours" class="form-control" id="title" placeholder="Hours">
+	</div>
+	<input type="submit" class="btn btn-primary" ng-click="saveRes()" value="Save">
+</form>

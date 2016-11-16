@@ -1,0 +1,28 @@
+<a class="btn btn-primary" href="/#/create/res"><span class="glyphic glyphicon-plus"></span>Create Entry</a>
+<table class="table table-striped">
+	<thead>
+		<th>Name</th>
+		<th>Date</th>
+		<th>Hours</th>
+		<th>Violation</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="res in residents">
+			<td><a ng-href="/#/res/{{res._id}}">{{res.name}}</a></td>
+			<td>{{res.date}}</td>
+			<td>{{res.hours}}</td>
+			<td ng-if"res.problems=''">None</td>
+			<td ng-if"res.problems!=''">{{res.problems}}</td>
+			<td>
+				<div class="button-group">
+					<a ng-href="/#/res/{{res._id}}/edit" class="btn btn-default">
+						<span class="glyphicon glyphicon-edit"></span>
+					</a>
+					<a ng-href="/#/res/{{res._id}}/delete" class="btn btn-danger">
+						<span class="glyphicon glyphicon-remove-circle"></span>
+					</a>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>

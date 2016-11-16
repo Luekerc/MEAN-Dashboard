@@ -1,0 +1,62 @@
+<div class="jumbotron">
+  <h1>MedTime Tracker</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Ensuring compliance and quality for providers and patients
+  </p>
+<!--   <p><a class="btn btn-lg btn-success" ng-href="#/create/movie">Movie Start<span class="glyphicon glyphicon-ok"></span></a></p> -->
+  <p><a class="btn btn-lg btn-success" ng-href="#/res">Residents Click Here <span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row marketing">
+  <h4>Duty Hours Application</h4>
+  <p>
+    The Accreditation Council for Graduate Medical Education (ACGME) oversees residency programs around the country. It is particularly concerned with the resident’s time spent on and off duty to ensure both quality of education and a quality of life.  Time a resident spends on duty is known as Duty Hours.
+  </p>
+  <p>
+    Our institution, Premise Health University, needs to increase oversite of our resident’s Duty Hours to track and monitor them for violations.  The Duty Hours application must contain the following:
+  </p>
+  <h5>Resident Calendar</h5>
+  <p>
+    Each resident should be able to enter their Duty Hours and have the data persisted. The application should permit the resident to view their duty hours history in calendar form. Please note that a single calendar entry may span more than one day.
+  </p>
+  <h5>Resident Analysis</h5>
+  <p>
+    Each resident should be able to run a Duty Hour Analysis against their own calendar and see the results (See Duty Hour Analysis) for more details.
+  </p>
+  <h5>Administration Analysis</h5>
+  <p>
+    An administrator should be able to run Duty Hour Analysis for all residents or be able to select 1 to n number of residents for the system to run the analysis on.
+  </p>
+  <h5>Duty Hour Analysis</h5>
+  <p>
+    When a duty hours analysis is run the user should set a start date for the analysis and the evaluation should be on the resident’s calendar for the subsequent  4 weeks (28 days) from midnight on the first day to 11:59:59 pm on the last day. Hours that fall outside for the 4 week timespan should not be used in the analysis.
+  </p>
+  <h5>Duty Hour Rules</h5>
+  <p>
+    The analysis should evaluate a residents hours looking for violations of the following rules:
+      <ol>
+        <li>Duty Hours must be limited to 80 hour/week averaged over a  four-week period.</li>
+        <li>Residents must have a 24-hour day off each week averaged over a four-week period.</li>
+        <li>A resident’s individual shift must not exceed 24 hours of continuous duty</li>
+        <li>A resident must have a minimum of 8 hours off between shifts.</li>
+      <ol>
+  </p>
+  <h5>Analysis Results</h5>
+  <p>
+    When a duty hours analysis is performed the results should display with the following information:
+      <ul>
+        <li>Description of the violation</li>
+        <li>The number times a violation occurred if applicable</li>
+        <li>List of the shifts that are causing the violation.</li>
+        <ul>
+          <li>If the violation is over the 80 hour work week. List every shift that takes the resident over 320 hours for the four week period</li>
+          <li>Any shift which exceeds 24 hours should be listed</li>
+          <li>If the resident didn’t have 8 hours between shifts list the shifts that started less than 8 hours after the previous shift ended</li>
+        </ul>
+        <li>A resident must have a minimum of 8 hours off between shifts.</li>
+      <ol>
+  </p>
+
+
+</div>

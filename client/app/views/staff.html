@@ -1,0 +1,17 @@
+<table class="table table-striped">
+	<thead>
+		<th>Name</th>
+		<th>Date</th>
+		<th>Hours</th>
+		<th>Violations</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="res in residents">
+			<td>{{res.name}}</td>
+			<td>{{res.date}}</td>
+			<td>{{res.hours}}</td>
+			<!-- <td ng-if"res.errors=''">None</td> -->
+			<td >{{res.problems}}</td>
+		</tr>
+	</tbody>
+</table>
